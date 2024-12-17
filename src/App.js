@@ -1,4 +1,5 @@
 import "./styles.css";
+import DigitButton from "./DigitButton"
 
 export const ACTIONS = {
   ADD_DIGIT: "add-digit",
@@ -31,7 +32,7 @@ function App() {
       </div>
       <button className="span-two">AC</button>
       <button>DEL</button>
-      <button>/</button>
+      <DigitButton digit="/" dispatch={dispatch} />
       <button>1</button>
       <button>2</button>
       <button>3</button>
